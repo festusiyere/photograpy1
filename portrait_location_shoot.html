@@ -1,0 +1,271 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Dot Digitals - Location Based Portraits</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/grt-responsive-menu.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/all.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="fonts/Lato-Black.ttf">
+  <link rel="stylesheet" href="fonts/Lato-Light.ttf">
+  <link rel="stylesheet" href="fonts/Lato-bold.ttf">
+  <link rel="stylesheet" href="fonts/Lato-Hairline.ttf">
+  <link rel="stylesheet" href="fonts/Lato-Italic.ttf">
+  <link rel="stylesheet" href="fonts/Lato-Regular.ttf">
+  <script src="js/bootstrap.js"></script>
+  <script src="js/jquery-3.3.1.js"></script>
+  <style media="">
+  @media (min-width: 320px) and (max-width: 500px) {
+    .centerr img{
+      min-width: 380px !important;
+      max-width: 450px !important;
+      max-height: 450px !important;
+      height: 100%;
+      width: 100%;
+    }
+
+  }
+
+      #about{
+        font-family: 'Lato Light';
+        letter-spacing: 1.5px;
+        font-size: 2rem;
+        color: rgba(0, 0, 0, 0.7);
+        font-weight: 550;
+      }
+
+    .centerr img{
+      min-width: 550px !important;
+      max-width: 650px !important;
+      min-height: 600px !important;
+      max-height: 650px !important;
+      height: 100%;
+      width: 100%;
+    }
+    #nextGalleryImage, #previousGalleryImage, .slick-prev, .slick-next
+    {
+      display: block;
+      position: absolute;
+      top: 50%;
+      width: 60px;
+      height: 60px;
+      margin-top: -30px;
+      z-index: 104;
+      cursor: pointer;
+      background-repeat:no-repeat;
+      font-size: 0;
+      border: none;
+      background-color: transparent;
+      background-position: center center;
+      opacity: 0.75;
+      transition: 0.3s all;
+    }
+    #galleryOverlay span:hover, #nextGalleryImage:hover, #previousGalleryImage:hover, .slick-prev:hover, .slick-next:hover
+    {
+      opacity: 1;
+    }
+
+    #nextGalleryImage, .slick-next
+    {
+      right: 0;
+      background-image:url(images/next.svg);
+    }
+
+    #previousGalleryImage, .slick-prev
+    {
+      left: 0;
+      background-image:url(images/previous.svg);
+    }
+
+  </style>
+
+</head>
+<body class="">
+  <div class="spinner-wrapper">
+  <div class="spinner"> <img src="img/puff.svg" alt=""> </div>
+  </div>
+  <nav class="navbar navbar-expand-lg navbar-light bg-white py-lg-4  ">
+    <div class="navbar-brand ml-5 ml-sm-0 ml-md-0" align=center>
+      <a href="index.html" id="navbrand">
+        <img src="images/logo.png" align=center id="navlogo" class="mx-auto" alt="">
+      </a>
+      <div class="mx-auto" id="navbrandtext">
+        <a href="index.html" class=" " >DOT DIGITALS</a>
+      </div>
+    </div>
+      <button class="grt-mobile-button">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item mr-5">
+            <a class="nav-link" href="about.html" id="sii">ABOUT</a>
+          </li>
+          <li class="nav-item mr-5">
+            <a class="nav-link active" href="services.html" id="sii">SERVICES</a>
+          </li>
+          <li class="nav-item mr-5">
+            <a class="nav-link" href="gallery.html" id="sii">GALLERY</a>
+          </li>
+          <li class="nav-item mr-5">
+            <a class="nav-link" href="contact.html" id="sii">CONTACT</a>
+          </li>
+        </ul>
+
+  <!-- GLYPHICON -->
+        <div class="nav-item ml-auto d-xl-block d-xl-block d-none">
+          <a href="https://twitter.com/Dot_digitals"><i class="fab fa-twitter nav-link"></i></a>
+          <a href="https://web.facebook.com/dotdigitals/"><i class="fab fa-facebook-f nav-link"></i></a>
+          <a href="https://www.instagram.com/dot_digitals/"><i class="fab fa-instagram nav-link"></i></a>
+          <a href="https://wa.me/2348167168834"><i class="fab fa-whatsapp nav-link"></i></a>
+
+        </div>
+      </div>
+  </nav>
+  <section id="bses1" class="bg-light my-0 pt-5 pb-3" style="border: solid #f8f9fa 1px !important;">
+    <div class="container" style="justify-content: center;" align=center>
+      <div class="my-4" id="about">
+        LOCATION SHOOTS GALLERY
+      </div>
+    </div>
+  </section>
+    <div class="centerr m-0 mb-5" style="">
+      <img src="images/tip7.jpg" class="img-fluid"  alt="">
+      <img src="images/tip2.jpg" class="img-fluid"  alt="">
+      <img src="images/fashion.jpg" class="img-fluid"  alt="">
+        <img src="images/billboard.jpg" class="img-fluid" alt="">
+        <img src="images/c8.jpeg" class="img-fluid" alt="">
+        <img src="images/c9.jpeg" class="img-fluid" alt="">
+        <img src="images/tip.jpg" class="img-fluid" alt="">
+        <img src="images/tip3.jpg" class="img-fluid" alt="">
+        <img src="images/tip5.jpg" class="img-fluid" alt="">
+        <img src="images/c12.jpeg" class="img-fluid" alt="">
+    </div>
+
+
+  <section id="footer" class="bg-xl-light">
+    <div class="container">
+      <div class="py-sm-0 row">
+        <div class="col-md-12 col-lg-3 col-sm-12">
+          <div class="" id="footerlogo" align=center>
+              <img src="images/footer.png" align=center id="navlogo" class="mx-auto" alt="">
+            <div class="mx-auto" id="navbrandbtext">
+              DOT DIGITALS
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 col-lg-6 col-sm-12 my-4" align=center>
+          <div class="">
+            <span> <i class="fas fa-mobile-alt"></i> 08167168834</span>
+            <span>  <i class="fas fa-envelope"></i> info@dotdigitals.com</span>
+          </div>
+          <div class="">
+            <span>SURULERE</span>
+            <span id="bullet">&bullet;</span>
+            <span>LAGOS  STATE</span>
+            <span id="bullet">&bullet;</span>
+            <span>NIGERIA</span>
+          </div>
+        </div>
+        <div class="col-md-12 col-lg-3 col-sm-12 py-sm-0">
+          <div class="ml-auto" id="buttonicons" align=center>
+            <a href="https://web.facebook.com/dotdigitals/"><i class="fab fa-twitter nav-link"></i></a>
+            <a href="https://twitter.com/Dot_digitals"><i class="fab fa-facebook-f nav-link"></i></a>
+            <a href="https://www.instagram.com/dot_digitals/"><i class="fab fa-instagram nav-link"></i></a>
+            <a href="https://wa.me/2348167168834"><i class="fab fa-whatsapp nav-link"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 mt-sm-5 mt-md-5" id="copy" align=center >
+           &copy; DOT DIGITALS - 2019
+        </div>
+        <div class="col text-muted mb-sm-4" align=center>
+          Dot Digitals, Surulere, Lagos State, Nigeria.
+        </div>
+
+      </div>
+    </div>
+  </section id="footer">
+
+
+
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/grt-responsive-menu.js"></script>
+  <script src="js/scrollreveal.min.js"></script>
+  <script src="js/slick.js"></script>
+  <script src="js/swiper.js"></script>
+  <script src="js/main.js"></script>
+  <script >
+    $(document).ready(function(){
+      $('.centerr').slick({
+        dots: false,
+         infinite: true,
+         speed: 2000,
+         centerMode: true,
+         variableWidth: true,
+          slidesToShow: 4,
+          slidesToScroll: 4,
+          autoplay: true,
+          pauseOnFocus: false,
+          pauseOnHover: false,
+          swipeToSlide: true,
+          autoplaySpeed: 2000,
+            responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true,
+                dots: false,
+                centerMode: true,
+                variableWidth: true
+              }
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 2,
+                centerMode: true,
+                dots: false,
+                variableWidth: true,
+                slidesToScroll: 2
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                dots: false,
+                slidesToShow: 1,
+                variableWidth: true,
+                slidesToScroll: 1
+              }
+            }
+          ]
+          });
+    })
+  </script>
+  <script>
+  $(window).ready(function(){
+    ScrollReveal().reveal('#bses1', {
+      duration: 2000,
+      reset: true
+    });
+    });
+
+  </script>
+
+</body>
+</html>

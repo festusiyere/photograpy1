@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Testing</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <style>
+    .spinner {
+      width: 40px;
+      height: 40px;
+      position: absolute;
+      top: 48%;
+      left: 48%;
+    }
+      .spinner-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(313deg, #59253a, #78244c, #895061, #0677a1, #2d4159);
+  background-size: 1000% 1000%;
+
+  -webkit-animation: AnimationName 15s ease infinite;
+  -moz-animation: AnimationName 15s ease infinite;
+  -o-animation: AnimationName 15s ease infinite;
+  animation: AnimationName 15s ease infinite;
+  z-index: 999999;
+  }
+
+  @-webkit-keyframes AnimationName {
+      0%{background-position:0% 49%}
+      50%{background-position:100% 52%}
+      100%{background-position:0% 49%}
+  }
+  @-moz-keyframes AnimationName {
+      0%{background-position:0% 49%}
+      50%{background-position:100% 52%}
+      100%{background-position:0% 49%}
+  }
+  @-o-keyframes AnimationName {
+      0%{background-position:0% 49%}
+      50%{background-position:100% 52%}
+      100%{background-position:0% 49%}
+  }
+  @keyframes AnimationName {
+      0%{background-position:0% 49%}
+      50%{background-position:100% 52%}
+      100%{background-position:0% 49%}
+  }
+
+    </style>
+  </head>
+  <body class="">
+    <div class="spinner-wrapper">
+    <div class="spinner"></div>
+    </div>
+    <img src="images/c3.jpeg" class="img-fluid" alt="">
+    <img src="images/c4.jpeg" class="img-fluid" alt="">
+    <img src="images/c5.jpeg" class="img-fluid" alt="">
+    <img src="images/c6.jpg" class="img-fluid" alt="">
+    <img src="images/c7.jpeg" class="img-fluid" alt="">
+    <img src="images/c8.jpeg" class="img-fluid" alt="">
+
+
+
+
+
+  <script src="js/jquery-3.3.1.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script>
+  $(document).ready(function() {
+  //Preloader
+    $(window).on("load", function() {
+    preloaderFadeOutTime = 500;
+    function hidePreloader() {
+    var preloader = $('.spinner-wrapper');
+    preloader.fadeOut(preloaderFadeOutTime);
+    }
+    hidePreloader();
+  });
+  });
+  </script>
+
+  </body>
+</html>
